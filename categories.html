@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<script type = "text/javascript">
-    function hiding(){
+<script type="text/javascript">
+    function hiding() {
         var x = document.getElementById("listings");
-        if (x.style.display == "none"){
+        if (x.style.display == "none") {
             x.style.display = "block";
-        } else{
+        } else {
             x.style.display = "none";
         }
     }
@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Helping Hands</title>
-    <link rel = "icon" type = "image/png" href = "logo.png">
+    <link rel="icon" type="image/png" href="logo.png">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
@@ -108,9 +108,9 @@
                 </div>
                 <div class="col-md-4 text-left text-xl-right">
                     <div class="header-item">
-                    <img src="img/icons/sales.png" alt="">
-                    <p>Bringing the world together.</p>
-                </div>
+                        <img src="img/icons/sales.png" alt="">
+                        <p>Bringing the world together.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,24 +119,24 @@
 
     <!-- Page Add Section Begin -->
     <section class="page-add">
-        <div class = "search-form">
-        <div class="container">
-            <div class="row">
-                <div class="col order-first">
-                    <div class="page-breadcrumb">
-                        <h2>Requests<span>.</span></h2>
+        <div class="search-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col order-first">
+                        <div class="page-breadcrumb">
+                            <h2>Local Request Feed<span>.</span></h2>
+                        </div>
                     </div>
-                </div>
-                <div class="col order-last">
-                    <div class="page-breadcrumb">
-                        <form action="#">
-                            <input type="text" placeholder="Your current location">
-                            <button type="search" onclick="hiding()">Search</button>
-                        </form>
+                    <div class="col order-last">
+                        <div class="page-breadcrumb">
+                            <form action="#">
+                                <input type="text" placeholder="Postcode">
+                                <button type="search" onclick="hiding()">Search</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <!-- Page Add Section End -->
@@ -147,146 +147,174 @@
             <div class="categories-controls">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="categories-filter">
-                            <div class="cf-left">
-                                <form action="#">
-                                    <select class="sort">
-                                        <option value="">Distance</option>
-                                        <option value="">Price</option>
-                                        <option value="">Newest</option>
-                                    </select>
-                                </form>
-                            </div>
-                            <div class="cf-right">
-                                <span>20 Requests</span>
-                                <a href="#">2</a>
-                                <a href="#" class="active">4</a>
-                                <a href="#">6</a>
-                            </div>
-                        </div>
+
+                            <form action="#">
+                                <div class="categories-filter">
+                                    <div class="cf-left">
+                                        <select class="nice-select">
+                                            <option value="">Sort by</option>
+                                            <option value="lowHigh">Price</option>
+                                            <option value="newOld">Newest</option>
+                                            <option value="closeFat">Distance</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="categories-filter">
+                                    <div class="cf-left">
+                                        <select class="nice-select">
+                                            <option value="Categories">Filter</option>
+                                            <option value="Categories">Categories</option>
+                                            <option value="Services">Services</option>
+                                            <option value="Essential">Essential</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+
                     </div>
                 </div>
             </div>
-            <div id = "listings" style = "display:none">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="single-product-item">
-                        <figure>
-                            <img src="img/Requests/toiletroll.jpg" alt="">
-                        </figure>
-                        <div class="product-text">
-                            <table class = "table table-sm">
-                                <thead>
-                                    <tr>
-                                        <th scope = "col">Item name</th>
-                                        <th scope = "col">Item price</th>
-                                        <th scope = "col">User</th>
-                                        <th scope = "col">Distance</th>
-                                        <th scope = "col">Requested</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <th scope = "row">Toilet Roll</th>
-                                    <td>£1.99</td>
-                                    <td>@Theresa1932</td>
-                                    <td>1.2km</td>
-                                    <td>01/04/2020</td>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single-product-item">
-                        <figure>
-                            <img src="img/Requests/bread.jpg" alt="">
-                        </figure>
-                        <div class="product-text">
-                            <table class = "table table-sm">
-                                <thead>
-                                    <tr>
-                                        <th scope = "col">Item name</th>
-                                        <th scope = "col">Item price</th>
-                                        <th scope = "col">User</th>
-                                        <th scope = "col">Distance</th>
-                                        <th scope = "col">Requested</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <th scope = "row">Bread</th>
-                                    <td>£0.49</td>
-                                    <td>@Eleanor222</td>
-                                    <td>2km</td>
-                                    <td>25/03/2020</td>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+            <div id="listings" style="display:none">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="single-product-item">
                             <figure>
-                                <img src="img/Requests/milk.jpg" alt="">
+                                <div class="card" style="width: 30rem;">
+                                    <img class="card-img-top" src="img/Requests/goods.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Toilet Roll</h5>
+                                        <div class="product-text">
+                                            <table class="table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Price</th>
+                                                        <th scope="col">User</th>
+                                                        <th scope="col">Distance</th>
+                                                        <th scope="col">Needed by</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <th scope="row">£1.99</th>
+                                                    <td>@Theresa1932</td>
+                                                    <td>1.2km</td>
+                                                    <td>07/04/2020</td>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">More info</a>
+                                        <a href="#" class="btn btn-primary">Fulfill Request</a>
+                                    </div>
+                                </div>
                             </figure>
-                            <div class="product-text">
-                                <table class = "table table-sm">
-                                    <thead>
-                                        <tr>
-                                            <th scope = "col">Item name</th>
-                                            <th scope = "col">Item price</th>
-                                            <th scope = "col">User</th>
-                                            <th scope = "col">Distance</th>
-                                            <th scope = "col">Requested</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <th scope = "row">Milk</th>
-                                        <td>£1.84</td>
-                                        <td>@Arnold384</td>
-                                        <td>2.1km</td>
-                                        <td>30/03/2020</td>
-                                    </tbody>
-                                </table>
-                            </div>
+
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="single-product-item">
                             <figure>
-                                <img src="img/Requests/beans.jpg" alt="">
+                                <div class="card" style="width: 30rem;">
+                                    <img class="card-img-top" src="img/Requests/service.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Baby Sitting</h5>
+                                        <div class="product-text">
+                                            <table class="table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Price</th>
+                                                        <th scope="col">User</th>
+                                                        <th scope="col">Distance</th>
+                                                        <th scope="col">Needed by</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <th scope="row">0.49</th>
+                                                    <td>@Eleanor222</td>
+                                                    <td>2.0km</td>
+                                                    <td>12/04/2020</td>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <a href="#" class="btn btn-primary">More info</a>
+                                        <a href="#" class="btn btn-primary">Fulfill Request</a>
+                                    </div>
+                                </div>
                             </figure>
-                            <div class="product-text">
-                                <table class = "table table-sm">
-                                    <thead>
-                                        <tr>
-                                            <th scope = "col">Item name</th>
-                                            <th scope = "col">Item price</th>
-                                            <th scope = "col">User</th>
-                                            <th scope = "col">Distance</th>
-                                            <th scope = "col">Requested</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <th scope = "row">Beans</th>
-                                        <td>£0.29</td>
-                                        <td>@Betty1947</td>
-                                        <td>5.2km</td>
-                                        <td>01/04/2020</td>
-                                    </tbody>
-                                </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-product-item">
+                                <figure>
+                                    <div class="card" style="width: 30rem;">
+                                        <img class="card-img-top" src="img/Requests/pill.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Toilet Roll</h5>
+                                            <div class="product-text">
+                                                <table class="table table-sm">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Price</th>
+                                                            <th scope="col">User</th>
+                                                            <th scope="col">Distance</th>
+                                                            <th scope="col">Needed by</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <th scope="row">£1.84</th>
+                                                        <td>@Arnold384</td>
+                                                        <td>2.1km</td>
+                                                        <td>15/04/2020</td>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">More info</a>
+                                        <a href="#" class="btn btn-primary">Fulfill Request</a>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-product-item">
+                                <figure>
+                                    <div class="card" style="width: 30rem;">
+                                        <img class="card-img-top" src="img/Requests/goods.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Paracetamol</h5>
+                                            <div class="product-text">
+                                                <table class="table table-sm">
+                                                    <thead>
+                                                        <tr></tr>
+                                                        <th scope="col">Price</th>
+                                                        <th scope="col">User</th>
+                                                        <th scope="col">Distance</th>
+                                                        <th scope="col">Needed by</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <th scope="row">£0.29</th>
+                                                        <td>@Betty1947</td>
+                                                        <td>5.2km</td>
+                                                        <td>07/04/2020</td>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <a href="#" class="btn btn-primary">More info</a>
+                                        <a href="#" class="btn btn-primary">Fulfill Request</a>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="more-product">
+                            <div class="column">
+                                <div class="col-lg-12 text-center">
+                                    <a href="#" class="primary-btn">Load More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                <div class="more-product">
-                    <div class="column">
-                        <div class="col-lg-12 text-center">
-                            <a href="#" class="primary-btn">Load More</a>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            </div>
     </section>
     <!-- Categories Page Section End -->
 
