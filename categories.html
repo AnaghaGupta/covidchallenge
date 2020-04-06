@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<script type="text/javascript">
-    function hiding() {
-        var x = document.getElementById("listings");
-        if (x.style.display == "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
-</script>
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Yoga Studio Template">
@@ -20,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Helping Hands</title>
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel = "icon" type = "image/png" href = "logo.png">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
@@ -42,17 +30,17 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
+    
     <!-- Search model -->
-    <div class="search-model">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-            <div class="search-close-switch">+</div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
-            </form>
-        </div>
-    </div>
-    <!-- Search model end -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">+</div>
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
 
     <!-- Header Section Begin -->
     <header class="header-section">
@@ -70,19 +58,19 @@
                     </a>
                 </div>
                 <div class="user-access">
-                    <a href="signup.html">Register</a>
-                    <a href="login.html" class="in">Sign in</a>
+                    Signed in as <a href="#">@MerdithMash2838</a>
                 </div>
                 <nav class="main-menu mobile-menu">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
-                        <li><a class="active" href="./categories.html">Requests</a></li>
-                        <li><a href="./contact.html">My Profile</a>
+                        <li><a href="./categories.html">Requests</a></li>
+                        <li><a class="active" href="./contact.html">My Profile</a>
                             <ul class="sub-menu">
-                                <li><a href="product-page.html">My Requests</a></li>
+                                <li><a href="my-requests.html">My Requests</a></li>
                                 <li><a href="shopping-cart.html">My Tasks</a></li>
-                                <li><a href="check-out.html">My Friends</a></li>
+                                <li><a href="friends.html">My Friends</a></li>
+                                <li><a href = "create-request.html">Create Request</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -90,7 +78,6 @@
             </div>
         </div>
     </header>
-    <!-- Header Info Begin -->
     <div class="header-info">
         <div class="container-fluid">
             <div class="row">
@@ -108,13 +95,14 @@
                 </div>
                 <div class="col-md-4 text-left text-xl-right">
                     <div class="header-item">
-                        <img src="img/icons/sales.png" alt="">
-                        <p>Bringing the world together.</p>
-                    </div>
+                    <img src="img/icons/sales.png" alt="">
+                    <p>Bringing the world together.</p>
+                </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Header Info End -->
     <!-- Header End -->
 
     <!-- Page Add Section Begin -->
